@@ -1,35 +1,46 @@
-import React from 'react'
 import styled from '@xstyled/styled-components'
 import { NavLink } from 'react-router-dom'
+import { Col, Row } from 'antd'
+import { CenterContent } from './BaseStylings'
 
-const NavigationStyled = styled.div`
-  display: flex;
-  height: 100px;
-  justify-content: space-between;
-  align-items: center;
+const NavigationStyled = styled(Row)`
+  height: 64px;
+  padding: 0 2em;
+  box-shadow: 0px 1px 15px rgba(25, 38, 21, 0.15);
+  background-color: lighterBackground;
 `
-const TemporaryLogo = styled.h1`
-  margin: 1em;
-`
-const NavLinks = styled.div`
-  display: flex;
-  justify-content: center;
-  padding-right: 1em;
+const Logo = styled.img`
+  height: 40px;
 `
 const Link = styled(NavLink)`
+  font-family: primary;
+  font-size: 18px;
   text-decoration: none;
-  margin: 1em 1.5em;
+  margin: 1em 2em;
+  color: primary;
+`
+const AlignRight = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `
 const Navigation = () => {
   return (
-    <NavigationStyled>
-      <TemporaryLogo>Logo</TemporaryLogo>
-      <NavLinks>
-        <Link to='/'>Home</Link>
-        <Link to='/products'>Products</Link>
-        <Link to='/dashboard'>Dashboard</Link>
-        <Link to='/about'>About</Link>
-      </NavLinks>
+    <NavigationStyled align='middle'>
+      <Col span={8}>
+        <Link to='/'>Buy</Link>
+        <Link to='/products'>Sell</Link>
+      </Col>
+      <Col span={8}>
+        <CenterContent>
+          <Logo src='images/logo.svg' alt='zidence logo' />
+        </CenterContent>
+      </Col>
+      <Col span={8}>
+        <AlignRight>
+          <Link to='/register'>Register</Link>
+          <Link to='/login'>Login</Link>
+        </AlignRight>
+      </Col>
     </NavigationStyled>
   )
 }
