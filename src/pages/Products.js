@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { CenterContent, BigTitle, Navigation } from '../components'
 
 const Products = () => {

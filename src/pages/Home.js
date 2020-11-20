@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Navigation, CenterContent, BigTitle } from '../components'
 
 const Home = () => {
@@ -9,6 +7,7 @@ const Home = () => {
       <CenterContent>
         <BigTitle>Zidence Web</BigTitle>
       </CenterContent>
+      <img src='images/footer-illustration.svg' alt='zidence illustration' />
     </>
   )
 }
