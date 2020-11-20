@@ -6,8 +6,9 @@ const theme = {
   colors: {
     primary: '#192615',
     secondary: '#8F9C8B',
-    ternary: '#CCCACD',
-    backdrop: '#fdf5e8',
+    accent: '#FF7A63',
+    lighterBackground: '#FEFEF1',
+    background: '#FDF5E8',
   },
   fonts: {
     title: 'Coustard',
