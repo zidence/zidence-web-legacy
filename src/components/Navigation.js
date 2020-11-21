@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom'
 import { Col, Row } from 'antd'
 import { CenterContent } from './BaseStylings'
 
-const NavigationStyled = styled(Row)`
+const NavigationBox = styled(Row)`
   height: 64px;
   padding: 0 2em;
   box-shadow: 0px 1px 15px rgba(25, 38, 21, 0.15);
   background-color: lighterBackground;
 `
 const Logo = styled.img`
-  height: 40px;
+  height: 32px;
 `
 const Link = styled(NavLink)`
   font-family: primary;
@@ -25,7 +25,7 @@ const AlignRight = styled.div`
 `
 const Navigation = () => {
   return (
-    <NavigationStyled align='middle'>
+    <NavigationBox align='middle'>
       <Col span={8}>
         <Link to='/'>Buy</Link>
         <Link to='/products'>Sell</Link>
@@ -41,7 +41,7 @@ const Navigation = () => {
           <Link to='/login'>Login</Link>
         </AlignRight>
       </Col>
-    </NavigationStyled>
+    </NavigationBox>
   )
 }
 

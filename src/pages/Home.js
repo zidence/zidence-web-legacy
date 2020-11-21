@@ -1,13 +1,21 @@
-import { Navigation, CenterContent, BigTitle } from '../components'
+import {
+  Navigation,
+  CenterContent,
+  BigTitle,
+  Hero,
+  Footer,
+} from '../components'
 
 const Home = () => {
   return (
     <>
       <Navigation />
-      <CenterContent>
-        <BigTitle>Zidence Web</BigTitle>
-      </CenterContent>
-      <img src='images/footer-illustration.svg' alt='zidence illustration' />
+      <Hero backgroundPath='images/hero-image.jpg'>
+        <CenterContent>
+          <BigTitle>Zidence Web</BigTitle>
+        </CenterContent>
+      </Hero>
+      <Footer />
     </>
   )
 }
