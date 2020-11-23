@@ -1,5 +1,5 @@
 import { createGlobalStyle } from '@xstyled/styled-components'
-import 'antd/dist/antd.css'
+import 'antd/dist/antd.less'
 
 const GlobalStyle = createGlobalStyle`
 html, body {
