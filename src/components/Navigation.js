@@ -4,6 +4,8 @@ import { Col, Row } from 'antd'
 import { CenterContent } from './BaseStylings'
 
 const NavigationBox = styled(Row)`
+  position: sticky;
+  top: 0;
   height: 64px;
   padding: 0 2em;
   box-shadow: 0px 1px 15px rgba(25, 38, 21, 0.15);
@@ -13,7 +15,6 @@ const Logo = styled.img`
   height: 32px;
 `
 const Link = styled(NavLink)`
-  font-family: primary;
   font-size: 18px;
   text-decoration: none;
   margin: 1em 2em;
