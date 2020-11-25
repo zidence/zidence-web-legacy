@@ -10,6 +10,7 @@ const authInitialState = {
 }
 
 // Slice can generate actions and reducers
+// Immutability in reducers is achieved by built-in immer.js
 const authSlice = createSlice({
   name: 'auth',
   initialState: authInitialState,

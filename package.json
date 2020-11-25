@@ -25,7 +25,6 @@
     "start": "PORT=8000 craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject",
     "lint": "eslint . --ext .js",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "postinstall": "./postinstall.sh"
