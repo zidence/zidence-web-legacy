@@ -1,9 +1,10 @@
 import {
   Navigation,
-  CenterContent,
   BigTitle,
+  Title,
   Hero,
   Footer,
+  FilterBar,
 } from '../components'
 
 const Home = () => {
@@ -11,9 +12,9 @@ const Home = () => {
     <>
       <Navigation />
       <Hero backgroundPath='images/hero-image.jpg'>
-        <CenterContent>
-          <BigTitle>Zidence Web</BigTitle>
-        </CenterContent>
+        <BigTitle>The Ideal Residence</BigTitle>
+        <Title>Find your true comfort</Title>
+        <FilterBar />
       </Hero>
       <Footer />
     </>

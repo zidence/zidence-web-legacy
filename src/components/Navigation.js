@@ -10,6 +10,7 @@ const NavigationBox = styled(Row)`
   padding: 0 2em;
   box-shadow: 0px 1px 15px rgba(25, 38, 21, 0.15);
   background-color: lighterBackground;
+  z-index: 1;
 `
 const Logo = styled.img`
   height: 32px;

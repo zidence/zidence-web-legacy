@@ -7,6 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: primary;
     background-color: background;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

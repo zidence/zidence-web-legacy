@@ -1,13 +1,16 @@
 import styled from '@xstyled/styled-components'
-import { flexDirection } from '@xstyled/system'
+import { flexDirection, height } from '@xstyled/system'
 
 export const BigTitle = styled.h1`
-  font-family: title;
-  font-size: 3em;
-  letter-spacing: 0.15em;
-  color: primary;
+  font-size: 4.5em;
+  font-weight: 600;
+  color: lighterBackground;
 `
-
+export const Title = styled.h2`
+  font-family: title;
+  font-size: 2.5em;
+  color: lighterBackground;
+`
 export const CenterContent = styled.div`
   height: 100%;
   width: 100%;
@@ -28,4 +31,8 @@ export const Label = styled.label`
 export const Input = styled.input`
   padding: 0.5em;
   margin: 0.5em 0;
+`
+
+export const BlankSpace = styled.div`
+  ${height}
 `

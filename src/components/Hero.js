@@ -6,6 +6,9 @@ const HeroStyled = styled.div`
   display: flex;
   width: 100%;
   height: 91vh;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5em;
   ${backgroundImage}
 `
 
