@@ -19,6 +19,7 @@ const suffix = <img src='images/search-icon.svg' alt='search-icon' />
 const FilterBarStyled = styled(AutoComplete)`
   border-radius: 7px;
   background-color: background;
+  cursor: unset;
 `
 
 const FilterBar = () => {

@@ -5,7 +5,11 @@ import {
   Hero,
   Footer,
   FilterBar,
+  CenterContent,
+  SquareImage,
 } from '../components'
+
+import cities from '../data/cities.json'
 
 const Home = () => {
   return (
@@ -16,6 +20,12 @@ const Home = () => {
         <Title>Find your true comfort</Title>
         <FilterBar />
       </Hero>
+      <CenterContent>
+        {cities.map((city, index) => (
+          <SquareImage isWithPreview={false} key={index} src={city.imageSrc} />
+        ))}
+      </CenterContent>
+
       <Footer />
     </>
   )

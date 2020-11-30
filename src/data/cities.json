@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Jakarta",
+    "imageSrc": "images/jakarta.jpg"
+  },
+  {
+    "name": "Bali",
+    "imageSrc": "images/bali.jpg"
+  },
+  {
+    "name": "Tangerang",
+    "imageSrc": "images/tangerang.jpg"
+  }
+]

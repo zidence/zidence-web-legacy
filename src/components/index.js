@@ -2,6 +2,7 @@ import Navigation from './Navigation'
 import Hero from './Hero'
 import Footer from './Footer'
 import FilterBar from './FilterBar'
+import SquareImage from './SquareImage'
 import {
   CenterContent,
   BigTitle,
@@ -24,4 +25,5 @@ export {
   Hero,
   Footer,
   BlankSpace,
+  SquareImage,
 }
